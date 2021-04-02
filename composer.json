@@ -1,0 +1,25 @@
+{
+    "name": "ranksoft/module-faq",
+    "description": "FAQ Module",
+    "homepage": "https://github.com/ranksoft/faq",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Nikita K.",
+            "email": "mykyta.kotenko.job@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/ranksoft/faq/issues"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "RANK\\Faq\\": ""
+        }
+    }
+}

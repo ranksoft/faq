@@ -1,0 +1,17 @@
+{
+    "rank_faq": {
+        "column": {
+            "entity_id": true,
+            "question": true,
+            "answer": true,
+            "sort_order": true,
+            "status": true,
+            "created_at": true,
+            "updated_at": true
+        },
+        "index": {
+            "PRIMARY": true,
+            "RANK_FAQ_STATUS": true
+        }
+    }
+}

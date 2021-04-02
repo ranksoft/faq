@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="RANK_Faq::faq" title="FAQ">
+                    <resource id="RANK_Faq::faq_settings" title="FAQ Settings">
+                        <resource id="RANK_Faq::faq_save" title="FAQ Save"/>
+                        <resource id="RANK_Faq::faq_update" title="FAQ Update"/>
+                        <resource id="RANK_Faq::faq_delete" title="FAQ Delete"/>
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>
