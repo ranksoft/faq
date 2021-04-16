@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <!-- todo: this config for example. -->
-    <!--    <preference for="RANK\Faq\Api\Data\FaqInterface" type="RANK\Faq\Model\Data\Faq"/>-->
-    <preference for="RANK\Faq\Api\Data\FaqInterface" type="RANK\Faq\Model\Faq"/>
+    <preference for="RANK\Faq\Api\Data\FaqInterface" type="RANK\Faq\Model\Data\Faq"/>
+<!--    <preference for="RANK\Faq\Api\Data\FaqInterface" type="RANK\Faq\Model\Faq"/>-->
     <preference for="RANK\Faq\Api\Data\FaqSearchResultInterface" type="RANK\Faq\Model\FaqSearchResult"/>
     <preference for="RANK\Faq\Api\FaqRepositoryInterface" type="RANK\Faq\Model\FaqRepository"/>
     <preference for="RANK\Faq\Api\FaqManagementInterface" type="RANK\Faq\Model\FaqManagement"/>

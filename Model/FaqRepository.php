@@ -99,12 +99,12 @@ class FaqRepository extends AbstractRepository implements FaqRepositoryInterface
         try {
             //todo: this code for example.
             /** Variant First For this variant, the implementation of the service contract must be a model. */
-            $this->resource->save($faq);
+//            $this->resource->save($faq);
             /**  Variant Second For this option, the implementation of the contract service must extends from ExtensibleDataInterface and the DTO class must extends AbstractExtensibleModel or AbstractSimpleObject. */
-//            $faqData = $this->extensibleDataObjectConverter->toNestedArray($faq, [], FaqInterface::class);
-//            $faqModel = $this->factory->create(['data' => $faqData]);
-//            $faqModel->setId($faq->getId());
-//            $this->resource->save($faqModel);
+            $faqData = $this->extensibleDataObjectConverter->toNestedArray($faq, [], FaqInterface::class);
+            $faqModel = $this->factory->create(['data' => $faqData]);
+            $faqModel->setId($faq->getId());
+            $this->resource->save($faqModel);
             /**  Variant Third For this option, the implementation of the service contract must be the DTO class and the DTO class must extends AbstractExtensibleModel or AbstractSimpleObject.  */
 //            $this->entityManager->save($faq);
         } catch (\Exception $exception) {
